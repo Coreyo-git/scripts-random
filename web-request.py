@@ -16,11 +16,13 @@ websites = [
     "https://theuselesswebsite.com",
     "https://Microsoft.com",
     "https://apple.com",
-    "https://"
+    "https://udemy.com"
 ]
 
-x = 10
+x = 0
 while x < 10:
     currentSite = random.choice(websites)
     site = requests.get(currentSite)
+    print(site)
+    print("GET : ", currentSite)
     time.sleep(10)

@@ -33,6 +33,4 @@ print(888+88+8+8+8)
 from math import sqrt
 ##### Put the code to evaluate and print your expression here
 
-print(float(888+88+8+8+8))
-# Got from the solution although I don't think
-# I would have found it without looking D:
+print(float(888+88+8+8+8)) # Wrong failed to find the solution

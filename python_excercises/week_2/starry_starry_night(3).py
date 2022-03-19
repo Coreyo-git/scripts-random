@@ -43,10 +43,21 @@ from random import randint
 # DEVELOP YOUR SOLUTION HERE
 
 setup()
+screensize(1200,1200)
 title('Starry Starry night')
 bgcolor('black')
-speed('fast')
+speed('fastest')
 color('white')
+penup()
+
+for star in range(200):
+    if randint(0, 100) > 85:
+        color('red')     
+    else:
+        color('white')
+    
+    goto(randint(0,1000), randint(0,1000))
+    dot(randint(0,6))
 
 # Exit gracefully
 hideturtle()

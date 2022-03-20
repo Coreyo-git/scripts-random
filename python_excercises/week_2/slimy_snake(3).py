@@ -61,6 +61,7 @@ speed('fast')
 # *** YOUR TASK: Introduce a list here, initially empty,
 # in which to store "stamp identifiers" to keep track
 # of each snake segment
+snake = []
 
 # Draw the snake
 #
@@ -71,7 +72,7 @@ for segment in range(snake_length):
   # Move to the next position (overlapping the previous step a little)
   forward(segment_size - overlap)
   # Draw the next segment
-  stamp()
+  snake.append(stamp())
 
 # Move the snake's segments along
 #
@@ -84,8 +85,14 @@ for step in range(num_steps):
   left(choice([-90, 0, 0, 0, 0, 90]))
   # Move to the next position (overlapping the previous step a little)
   forward(segment_size - overlap)
+  
+  if len(snake) > snake_length:
+    clearstamp(min(snake))
+    snake.pop(0)
+      
+  clearstamp(min(snake))
   # Draw the next segment
-  stamp()
+  snake.append(stamp())
 
 # Exit gracefully
 hideturtle()

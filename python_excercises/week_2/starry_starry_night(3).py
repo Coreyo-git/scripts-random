@@ -57,7 +57,7 @@ for star in range(200):
         color('white')
     
     goto(randint(0,1000), randint(0,1000))
-    dot(randint(0,6))
+    dot(randint(0,50))
 
 # Exit gracefully
 hideturtle()

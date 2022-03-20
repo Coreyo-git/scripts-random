@@ -47,7 +47,7 @@ for i in range(5):
     forward(diameter[i] - 100)
     color(colour[i])
     dot(diameter[i])
-    forward(diameter[i] + 5)
+    forward(diameter[i] /2 + 5)
     write(name[i])
 
 # Exit gracefully

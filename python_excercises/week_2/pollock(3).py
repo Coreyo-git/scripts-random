@@ -14,16 +14,6 @@
 ##  blob to the next.  The "paint" should not go off the edge
 ##  of the "canvas".  Use the following solution strategy.
 ##
-##    1. Set up the blank canvas of a known size
-##    2. Ensure the pen is down
-##    3. For each "blob" in a large range:
-##       a. Select a random pen colour
-##       b. Pick a random pen width
-##       c. Go to a random location on the screen
-##          (drawing as you go)
-##       d. Draw a blob (dot)
-##    4. Exit the program gracefully
-##
 ##  Hint: Although you could select colours from a list of
 ##  names, you can get a wider range of colours, by noting
 ##  that Turtle's "color" function can accept three numbers

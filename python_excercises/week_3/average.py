@@ -54,7 +54,6 @@
 #### REPLACE THE "DO NOTHING" STATEMENT BELOW
 ##### WITH YOUR average FUNCTION DEFINITION
 def average(num, num2):
-    print((num + num2) / 2)
     return ((num + num2) / 2)
 
 

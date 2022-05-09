@@ -22,7 +22,7 @@ from time import time
 # Morlocks.  Add a for-each loop to the following code and
 # use the "find" method to find and print each line of the
 # novel that mentions Morlocks.
-time_machine = open('week_8/TheTimeMachine.txt') # open the file
+time_machine = open('week_8/morlock_finder/TheTimeMachine.txt') # open the file
 
 # Read all lines from time_machine text and store it as lines
 lines = time_machine.readlines()
@@ -41,7 +41,7 @@ time_machine.close() # close the file
 # Read the file's contents into a character string.  You should
 # use this string to complete all of the tasks below, so don't
 # change it.
-time_machine = open('week_8/TheTimeMachine.txt') # open the file
+time_machine = open('week_8/morlock_finder/TheTimeMachine.txt') # open the file
 time_machine_text = time_machine.read() # read the file's contents
 time_machine.close() # close the file
 

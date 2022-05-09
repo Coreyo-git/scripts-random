@@ -28,8 +28,9 @@ source.close()
 # the text for this four-letter pattern and print how many
 # matches you get
 #
-exclaims = findall("Aha!",text)
-print(exclaims)
+exclaims = findall("Aha!", text)
+print("Number of times pirates exmains 'Aha!':", len(exclaims)) # happens 0 times?
+print()
 
 # We all know that "Jim" is the protagonist of the novel, as
 # exemplified by the cliche "Aha, Jim lad!", but what's Jim's
@@ -39,7 +40,9 @@ print(exclaims)
 # 'Jim' followed by a space followed by a capital letter followed
 # by one or more lower-case letters
 #
-pass
+jims_fullname = findall("Jim [A-Z][a-z]+", text)
+print("Jims FullName is:", jims_fullname)
+print()
 
 # Pirates are notorious for their love of rum.  Find and print
 # all occurrences of the word "rum", with and without an initial
@@ -47,7 +50,10 @@ pass
 # Be careful to ensure that you are matching a whole word and not
 # part of a larger word such as 'drum'.
 #
-pass
+found_rum = findall("[rR]um", text) # find all with lower or upper case [rR]um
+#print(found_rum) # prints all found
+print("Number of rums found:", len(found_rum)) # Prints total found
+print()
 
 # Something else we learned from Treasure Island is that
 # pirate captains always have a parrot sitting on their shoulder.
@@ -55,7 +61,10 @@ pass
 # the same phrase, over and over: "Pieces of X!".  Use your
 # skills with regular expressions to find out what word X is.
 #
-pass
+parrot_phrase = findall("Pieces of ([a-zA-Z]+)", text)
+parrot_phrase = set(parrot_phrase)
+print("Parrot phrases are:", parrot_phrase)
+print()
 
 # In a novel about pirates it's inevitable that many ship's
 # captains are mentioned.  Sometimes they're referred to as
@@ -66,4 +75,5 @@ pass
 # call the function twice for the two different patterns.
 # (Observation: One of these "captains" is the parrot!)
 #
-pass
+captins = findall("Cap(?:'|tai)n [A-Z][a-z]+", text)
+print(set(captins))

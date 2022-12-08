@@ -7,7 +7,7 @@ musicFolderExists = os.path.exists(musicOutputPath)
 
 # set playlist to youtube url of playlist
 pl = Playlist(
-    "https://www.youtube.com/playlist?list=<INSERT PLAYLIST URL HERE>")
+    "https://www.youtube.com/playlist?=<Insert Playlist Here>")
 
 # Checks if the folder exists, crates if not
 def checkMusicOutputExists():

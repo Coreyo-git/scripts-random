@@ -22,4 +22,7 @@ Fixes vmware error when recompiling the vmmon module with new kernel version
 ## Web Request 
 > A script for generating wireless traffic accross a network in a project for WEP analyzing and cracking.
 
+## Discord Update 
+> updates discord when third party repo is not up to date ( built for fedora or other RHEL based spins )
+
 

@@ -7,7 +7,7 @@ DISCORDPATH='/usr/lib64/discord'
 echo "Getting discord udpate"
 
 # get latest update
-# wget "$UPDATEURL" -O /tmp/discord.tar.gz
+wget "$UPDATEURL" -O /tmp/discord.tar.gz
 
 # check if update exists
 if compgen -G "${UPDATETAR}" > /dev/null; then

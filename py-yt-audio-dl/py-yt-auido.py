@@ -7,7 +7,7 @@ musicFolderExists = os.path.exists(musicOutputPath)
 
 # set playlist to youtube url of playlist
 pl = Playlist(
-    "https://www.youtube.com/playlist?=<Insert Playlist Here>")
+    "https://www.youtube.com/playlist?list=<Insert Playlist Here>")
 
 # Checks if the folder exists, crates if not
 def checkMusicOutputExists():
@@ -20,6 +20,8 @@ def download(pl):
     # loop through each video in playlist and download only audio
     for video in pl.videos:
         songs_downloaded += 1
+	video.use_oauth = True
+        video.allow_cache = True
         # stores the song output directory with the current song title as a string
 	# checks if the current song is not already downloaded
 	# if current song doesn't exist download as mp4 audio only
